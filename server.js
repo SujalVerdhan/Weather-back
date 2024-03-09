@@ -10,7 +10,7 @@ const data=require("./routes/data")
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.json())
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000"),
+  res.setHeader("Access-Control-Allow-Origin","https://weather-front-ovxe.onrender.com/"),
   res.header(
       "Access-Control-Allow-Headers",
       "Origin,X-Requested-With, Content-Type, Accept "
